@@ -14,7 +14,8 @@ int main()
     long long m1=nums[n-1];
     long long m2=nums[n-2];
     long long possible_cycle=m/(k+1);
-    long long ans=possible_cycle*(m1*k+m2);
+    long long remaining=m%(k+1);
+    long long ans=possible_cycle*(m1*k+m2*remaining);
     cout<<ans<<endl;
     
   return 0;
